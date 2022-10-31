@@ -1,0 +1,267 @@
+body {
+    font-family:Inter;
+    margin:0;
+}
+
+.first-part {
+    background: url("background_picture.jpg") no-repeat center center/cover;
+    width:100%;
+    height:75vh;
+}
+
+.netflix-logo {
+    height:4vh;
+    z-index:1;
+}
+
+.first-part {
+    display:grid;
+    grid-template-rows: 1fr 4fr;
+}
+.main-area {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin-bottom:15em;
+}
+
+.main-area::after {
+    content:'';
+    width:100%;
+    height:75%;
+    top:0;
+    left:0;
+    position:absolute;
+    background: rgba(0,0,0,0.5);
+    
+}
+.big-title {
+    margin:.2em;
+    font-size:2.75rem;
+    z-index:1;
+    text-align: center;
+    font-weight: bolder;
+}
+.subtitle {
+    margin-bottom:1em;
+    z-index:1;
+    font-size:1.75rem;
+}
+.subtitle-2 {
+    font-size:1.1rem;
+    margin-bottom:0.5em;
+    z-index:1;
+}
+
+.input-form {
+    width:70vh;
+    z-index:1;
+}
+.email-registration {
+    width:70vh;
+    display:flex;
+    justify-content: center;
+    z-index:1;
+    margin-top:.5em;
+}
+.email {
+    width:70%;
+    padding:1em;
+    z-index:1;
+}
+.get-started {
+    width:30%;
+    background-color:red;
+    color:white;
+    font-size:1.4rem;
+    padding:0.5em;
+    z-index:1;
+    border:0px;
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:1;
+    margin-left:4vw;
+    margin-right:4vw;
+    margin-top:0;
+    height:10vh;
+}
+
+.header-buttons {
+    width:25vh;
+    display:flex;
+    justify-content: space-around;
+    color:white;
+    z-index:1;
+    align-items:center;
+}
+
+.sign-in.button {
+    background-color:red;
+    color:white;
+    font-size:1rem;
+    padding:.8em;
+    padding-bottom:.5em;
+    padding-top:0.5em;
+    border: 0px;
+    z-index:1;
+    border-radius:15%;
+}
+
+.language-select {
+    background-color: rgba(0,0,0,0.5);
+    padding:.8em;
+    padding-bottom:.5em;
+    padding-top:0.5em;
+    border: 1px solid whitesmoke;
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin-bottom:15em;
+    z-index:1;
+    top:8em;
+    position:relative;
+}
+
+.enjoy-tv {
+    display:flex;
+    align-items:center;
+    width:100%;
+    justify-content: center;
+}
+
+.enjoy-tv-text {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap:wrap;
+    text-align:left;
+    padding:5em;
+    justify-self:flex-start;
+}
+
+
+.enjoy-tv-text .asd {
+    font-size:4rem;
+}
+
+.enjoy-tv-text .qwer {
+    font-size:2rem;
+}
+
+.video-container {
+    width:640px;
+    height:480px;
+    position:relative;
+}
+
+.video-player {
+    width:470px;
+    height:270px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-240px;
+    margin-top:-145px;
+    
+}
+
+.tv-background {
+    z-index:5;
+    position:relative;
+}
+
+.second-part {
+    background-color:black;
+    color:white;
+    border-top:10px solid rgb(46, 44, 44);
+}
+
+
+.box {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:23em;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 1em;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-190px;
+    z-index:22;
+    position:relative;
+    background-color:black;
+}
+
+.stranger_boxshot {
+    width:5em;
+    margin-left:1em;
+}
+
+.download-icon {
+    width:1.5em;
+    margin-right:1em;
+}
+
+.strangerthingstext {
+    font-weight:bold;
+}
+.downloading-text {
+    color:rgb(39, 39, 235);
+}
+
+@media (max-width: 700px) {
+    .enjoy-tv {
+        flex-direction:column;
+    }
+    .tv-background {
+        transform: scale(0.5);
+
+    }
+   .video-player {
+    transform: scale(0.5);
+   }
+   .input-form {
+    width:70vw;
+    z-index:1;
+}
+.email-registration {
+    width:70vw;
+    display:flex;
+    justify-content: center;
+    z-index:1;
+    margin-top:.5em;
+}
+.first-part {
+    background: url("background_picture.jpg") no-repeat center center/cover;
+    width:100%;
+    height:75vw;
+}
+
+.netflix-logo {
+    height:4vh;
+    z-index:1;
+}
+.first-part {
+    background: url("background_picture.jpg") no-repeat center center/cover;
+    width:100%;
+    height:75vh;
+}
+
+.netflix-logo {
+    height:4vh;
+    z-index:1;
+}
+
+
+}
